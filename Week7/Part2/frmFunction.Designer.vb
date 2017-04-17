@@ -85,6 +85,8 @@ Partial Class frmFunction
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "frmFunction"
         Me.Text = "Function"
         Me.ResumeLayout(False)

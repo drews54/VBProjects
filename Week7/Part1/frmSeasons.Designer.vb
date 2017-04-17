@@ -75,6 +75,7 @@ Partial Class frmSeasons
         Me.Controls.Add(Me.cmdMS)
         Me.Controls.Add(Me.txtSeason)
         Me.Controls.Add(Me.txtMonth)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.Name = "frmSeasons"
         Me.Text = "Seasons"
