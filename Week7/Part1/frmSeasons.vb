@@ -9,8 +9,8 @@
                    vbCritical,
                    "Input Error")
             Exit Sub
-        Else
-            strSeason = "The season is "
         End If
+
+        strSeason = "The season is "
     End Sub
 End Class
