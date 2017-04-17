@@ -8,6 +8,7 @@
             MsgBox("Input a correct number",
                    vbCritical,
                    "Input Error")
+            Exit Sub
         Else
             strSeason = "The season is "
         End If
