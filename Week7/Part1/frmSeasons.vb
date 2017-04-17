@@ -3,13 +3,13 @@
         Dim intMonth As Integer, blnMonth As Boolean, strSeason As String
 
         blnMonth = IsNumeric(txtMonth)
-        If blnMonth Then
-            strSeason = "The season is "
-        Else
-            strSeason ="Error"
+        If Not blnMonth Then
+            strSeason = "Error"
             MsgBox("Input a correct number",
                    vbCritical,
                    "Input Error")
+        Else
+            strSeason = "The season is "
         End If
     End Sub
 End Class
