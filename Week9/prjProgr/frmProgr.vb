@@ -3,7 +3,7 @@
         Dim a%, sum%, strProgr$
         'a = 1
         sum = 0
-        strProgr = vbEmpty
+        strProgr = String.Empty
         'Do While a <= 5
         'Do 'Until a > 5
         For a = 1 To 5
