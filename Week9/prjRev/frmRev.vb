@@ -9,5 +9,7 @@ Public Class frmRev
             Exit Sub
         End If
         TextBox1.Text = CStr(CLng(TextBox1.Text))
+        strT2 = String.Empty
+        a = CLng(TextBox1.Text)
     End Sub
 End Class
