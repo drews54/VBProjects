@@ -12,7 +12,8 @@
             'If a > 5 Then
             '    Exit Do
             'End If
-        Loop Until a > 5
+            'Loop Until a > 5
+        Loop While a <= 5
         TextBox1.Text = strProgr
     End Sub
 End Class
