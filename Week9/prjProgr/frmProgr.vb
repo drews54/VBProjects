@@ -6,12 +6,12 @@
         strProgr = vbEmpty
         'Do While a <= 5
         'Do 'Until a > 5
-        For a = 1 To 5 Step 1
+        For a = 1 To 5
             sum += a
             strProgr +=
                 "a = " + CStr(a) + Space(6) +
                 "sum = " + CStr(sum) + vbCrLf
-        Next a
+        Next
         'a += 1
         'If a > 5 Then
         '    Exit Do

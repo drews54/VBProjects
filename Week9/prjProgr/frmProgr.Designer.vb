@@ -43,7 +43,7 @@ Partial Class frmProgr
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
         Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox1.Size = New System.Drawing.Size(100, 80)
+        Me.TextBox1.Size = New System.Drawing.Size(148, 80)
         Me.TextBox1.TabIndex = 1
         '
         'Button2
@@ -62,7 +62,7 @@ Partial Class frmProgr
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Button2
-        Me.ClientSize = New System.Drawing.Size(284, 111)
+        Me.ClientSize = New System.Drawing.Size(334, 111)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
