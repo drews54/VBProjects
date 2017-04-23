@@ -8,5 +8,6 @@ Public Class frmRev
             MsgBox("Input a number", vbCritical, "Input Error")
             Exit Sub
         End If
+        TextBox1.Text = CStr(CLng(TextBox1.Text))
     End Sub
 End Class
