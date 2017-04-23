@@ -6,7 +6,8 @@
         strProgr = String.Empty
         'Do While a <= 5
         'Do 'Until a > 5
-        For a = 1 To 5
+        'For a = 1 To 5
+        For a = 5 To 1 Step -1
             sum += a
             strProgr +=
                 "a = " + CStr(a) + Space(6) +
