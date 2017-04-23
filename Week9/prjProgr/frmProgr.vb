@@ -3,7 +3,7 @@
         Dim a%, sum%, strProgr$
         a = 1 : sum = 0 : strProgr = vbEmpty
         'Do While a <= 5
-        Do Until a > 5
+        Do 'Until a > 5
             sum += a
             strProgr +=
                 "a = " + CStr(a) + Space(6) +
@@ -12,7 +12,7 @@
             'If a > 5 Then
             '    Exit Do
             'End If
-        Loop
+        Loop Until a > 5
         TextBox1.Text = strProgr
     End Sub
 End Class
