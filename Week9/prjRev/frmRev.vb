@@ -20,9 +20,15 @@ Public Class frmRev
         Loop Until a = 0
 Metka:
         Dim n%, strT1$
+        strT1 = TextBox1.Text
         For n = Len(strT1) To 1 Step -1
             strT2 += Mid(strT1, n, 1)
         Next
         TextBox2.Text = strT2
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        TextBox1.Clear()
+        TextBox2.Clear()
     End Sub
 End Class
