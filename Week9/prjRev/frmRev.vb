@@ -10,6 +10,7 @@ Public Class frmRev
         End If
         TextBox1.Text = CStr(CLng(TextBox1.Text))
         strT2 = String.Empty
+        GoTo Metka
         a = CLng(TextBox1.Text)
         Do
             digit = a Mod 10
@@ -17,6 +18,11 @@ Public Class frmRev
             strT2 += CStr(digit)
             'Loop While a <> 0
         Loop Until a = 0
+Metka:
+        Dim n%, strT1$
+        For n = Len(strT1) To 1 Step -1
+            strT2 += Mid(strT1, n, 1)
+        Next
         TextBox2.Text = strT2
     End Sub
 End Class
