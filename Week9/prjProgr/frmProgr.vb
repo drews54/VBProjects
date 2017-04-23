@@ -21,4 +21,8 @@
         'Loop While a <= 5
         TextBox1.Text = strProgr
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        TextBox1.Clear()
+    End Sub
 End Class
