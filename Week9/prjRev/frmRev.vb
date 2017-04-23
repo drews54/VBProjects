@@ -11,11 +11,11 @@ Public Class frmRev
         TextBox1.Text = CStr(CLng(TextBox1.Text))
         strT2 = String.Empty
         a = CLng(TextBox1.Text)
-        While a <> 0
+        Do
             digit = a Mod 10
             a \= 10
             strT2 += CStr(digit)
-        End While
+        Loop While a <> 0
         TextBox2.Text = strT2
     End Sub
 End Class
