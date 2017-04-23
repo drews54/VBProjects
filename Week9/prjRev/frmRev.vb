@@ -15,7 +15,8 @@ Public Class frmRev
             digit = a Mod 10
             a \= 10
             strT2 += CStr(digit)
-        Loop While a <> 0
+            'Loop While a <> 0
+        Loop Until a = 0
         TextBox2.Text = strT2
     End Sub
 End Class
