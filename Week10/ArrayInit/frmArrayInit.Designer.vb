@@ -36,45 +36,45 @@ Partial Class frmArrayInit
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(21, 218)
+        Me.Button1.Location = New System.Drawing.Point(12, 218)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(200, 23)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Input&Box"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(127, 218)
+        Me.Button2.Location = New System.Drawing.Point(218, 218)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(200, 23)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "In&side"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(233, 218)
+        Me.Button3.Location = New System.Drawing.Point(424, 218)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.Size = New System.Drawing.Size(200, 23)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "&Array"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(339, 218)
+        Me.Button4.Location = New System.Drawing.Point(630, 218)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.Size = New System.Drawing.Size(200, 23)
         Me.Button4.TabIndex = 3
         Me.Button4.Text = "&Random"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(445, 218)
+        Me.Button5.Location = New System.Drawing.Point(836, 218)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.Size = New System.Drawing.Size(200, 23)
         Me.Button5.TabIndex = 4
         Me.Button5.Text = "&Formula"
         Me.Button5.UseVisualStyleBackColor = True
@@ -86,51 +86,51 @@ Partial Class frmArrayInit
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
         Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox1.Size = New System.Drawing.Size(100, 200)
+        Me.TextBox1.Size = New System.Drawing.Size(200, 200)
         Me.TextBox1.TabIndex = 5
         Me.TextBox1.TabStop = False
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(118, 12)
+        Me.TextBox2.Location = New System.Drawing.Point(218, 12)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
         Me.TextBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox2.Size = New System.Drawing.Size(100, 200)
+        Me.TextBox2.Size = New System.Drawing.Size(200, 200)
         Me.TextBox2.TabIndex = 6
         Me.TextBox2.TabStop = False
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(224, 12)
+        Me.TextBox3.Location = New System.Drawing.Point(424, 12)
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.ReadOnly = True
         Me.TextBox3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox3.Size = New System.Drawing.Size(100, 200)
+        Me.TextBox3.Size = New System.Drawing.Size(200, 200)
         Me.TextBox3.TabIndex = 7
         Me.TextBox3.TabStop = False
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(330, 12)
+        Me.TextBox4.Location = New System.Drawing.Point(630, 12)
         Me.TextBox4.Multiline = True
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.ReadOnly = True
         Me.TextBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox4.Size = New System.Drawing.Size(100, 200)
+        Me.TextBox4.Size = New System.Drawing.Size(200, 200)
         Me.TextBox4.TabIndex = 8
         Me.TextBox4.TabStop = False
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(436, 12)
+        Me.TextBox5.Location = New System.Drawing.Point(836, 12)
         Me.TextBox5.Multiline = True
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.ReadOnly = True
         Me.TextBox5.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox5.Size = New System.Drawing.Size(100, 200)
+        Me.TextBox5.Size = New System.Drawing.Size(200, 200)
         Me.TextBox5.TabIndex = 9
         Me.TextBox5.TabStop = False
         '
@@ -138,7 +138,7 @@ Partial Class frmArrayInit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(544, 261)
+        Me.ClientSize = New System.Drawing.Size(1044, 249)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox3)

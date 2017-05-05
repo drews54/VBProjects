@@ -58,4 +58,16 @@ Public Class frmArrayInit
         Next
         TextBox4.Text = strA
     End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Dim A!(29)
+        Dim i%, strA$
+        strA = " i" + Space(8) + "  Ln(i)" + vbCrLf
+        For i = LBound(A) To UBound(A)
+            A(i) = Math.Log(i)
+            strA += Format(i, "00") + Space(8) +
+                Format(A(i), "0.00") + vbCrLf
+        Next
+        TextBox5.Text = strA
+    End Sub
 End Class
