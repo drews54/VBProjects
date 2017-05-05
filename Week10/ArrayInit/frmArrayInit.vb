@@ -44,4 +44,18 @@ Public Class frmArrayInit
         Next i
         TextBox3.Text = strA
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Dim A(20) As Integer
+        Dim i%, strA$
+        Randomize()
+        For i = LBound(A) To UBound(A)
+            A(i) = Int(50 * Rnd()) + 1
+        Next
+        strA = String.Empty
+        For i = LBound(A) To UBound(A)
+            strA += CStr(A(i)) + vbCrLf
+        Next
+        TextBox4.Text = strA
+    End Sub
 End Class
