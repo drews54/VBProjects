@@ -30,4 +30,18 @@ Public Class frmArrayInit
         Next i
         TextBox2.Text = strA
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim A$(4), B
+        Dim i%, strA$
+        B = {"Spoilers", "Flaps", "Slats", "Ailerons", "Winglets"} 'B is actually an Object type which boxes an Array (also has new init syntax).
+        For i = 0 To 4
+            A(i) = B(i)
+        Next i
+        strA = String.Empty
+        For i = 0 To 4
+            strA += A(i) + vbCrLf
+        Next i
+        TextBox3.Text = strA
+    End Sub
 End Class
