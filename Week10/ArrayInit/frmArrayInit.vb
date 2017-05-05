@@ -6,6 +6,7 @@
         For i = 0 To 4
             A(i) = InputBox($"Input name({i})", "Students' names initialization")
         Next i
+        A(5) = "Nikolaj"
         strA = String.Empty
         For i = 0 To 4
             strA += A(i) + vbCrLf
