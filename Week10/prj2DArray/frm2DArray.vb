@@ -9,29 +9,27 @@
     Dim a%(MIN_B To MAX_B, MIN_B To MAX_B)
     Dim i%, j%
 
-    Friend ReadOnly Property MultiplyingTableString
-        Get
-            Dim s$ = Space(6)
-            For j = MIN_B To MAX_B
-                s += Format(j + 2, "00") + Space(2)
-            Next
-            s += vbCrLf
+    Friend Function MultiplyingTableString(Optional lim% = Integer.MaxValue) As String
+        MultiplyingTableString = Space(6)
+        For j = MIN_B To MAX_B
+            MultiplyingTableString += Format(j + 2, "00") + Space(2)
+        Next
+        MultiplyingTableString += vbCrLf
 
-            For i = MIN_B To MAX_B
-                s += Format(i + 2, "00") + Space(2)
-                For j = MIN_B To MAX_B
-                    s += Format(a(i, j), "00") + Space(2)
-                Next j
-                s += vbCrLf
-            Next i
-            s += vbCrLf
-            Return s
-        End Get
-    End Property
+        For i = MIN_B To MAX_B
+            MultiplyingTableString += Format(i + 2, "00") + Space(2)
+            For j = MIN_B To MAX_B
+                If a(i, j) > lim Then Exit For
+                MultiplyingTableString += Format(a(i, j), "00") + Space(2)
+            Next j
+            MultiplyingTableString += vbCrLf
+        Next i
+        MultiplyingTableString += vbCrLf
+    End Function
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim gr = PictureBox1.CreateGraphics()
-        Dim s$ = MultiplyingTableString
+        Dim s$ = MultiplyingTableString()
         gr.DrawString(s, TextBox1.Font, SystemBrushes.WindowText, New PointF(0.0!, 4.0!))
         gr.Dispose()
     End Sub
@@ -43,7 +41,7 @@
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         '   Since DrawString method also utilizes similar string for output,
         '   it was taken out of a handler sub and moved into a separate property for reusability.
-        TextBox1.Text = MultiplyingTableString
+        TextBox1.Text = MultiplyingTableString(40)
     End Sub
 
     Private Sub frm2DArray_Load(sender As Object, e As EventArgs) Handles MyBase.Load
