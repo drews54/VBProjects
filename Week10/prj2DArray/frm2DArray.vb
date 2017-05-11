@@ -1,8 +1,5 @@
 ﻿Public Class frm2DArray
-#Region "Deprecated code (not used in build)"
-    'The following code is an example of VB5/6 possibilities.
-    'VB.NET, however, does not support changing lower bound of arrays,
-    'so there will be a workaround later in the code.
+#Region "Deprecated code (not used in build, works in VB5/6 only)"
     'Const MIN_B As Integer = 2
     'Const MAX_B As Integer = 9
     'Dim a%(MIN_B To MAX_B, MIN_B To MAX_B)
@@ -12,30 +9,41 @@
     Dim a%(MIN_B To MAX_B, MIN_B To MAX_B)
     Dim i%, j%
 
+    Friend ReadOnly Property MultiplyingTableString
+        Get
+            Dim s$ = Space(6)
+            For j = MIN_B To MAX_B
+                s += Format(j + 2, "00") + Space(2)
+            Next
+            s += vbCrLf
+
+            For i = MIN_B To MAX_B
+                s += Format(i + 2, "00") + Space(2)
+                For j = MIN_B To MAX_B
+                    s += Format(a(i, j), "00") + Space(2)
+                Next j
+                s += vbCrLf
+            Next i
+            s += vbCrLf
+            Return s
+        End Get
+    End Property
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim gr = PictureBox1.CreateGraphics()
-        Dim s As String = Space(6)
-#Region "String forming"
-        For j = MIN_B To MAX_B
-            s += Format(j + 2, "00") + Space(2)
-        Next
-        s += vbCrLf
-
-        For i = MIN_B To MAX_B
-            s += Format(i + 2, "00") + Space(2)
-            For j = MIN_B To MAX_B
-                s += Format(a(i, j), "00") + Space(2)
-            Next j
-            s += vbCrLf
-        Next i
-        s += vbCrLf
-#End Region
-        gr.DrawString(s, SystemFonts.DefaultFont, SystemBrushes.WindowText, New PointF())
+        Dim s$ = MultiplyingTableString
+        gr.DrawString(s, TextBox1.Font, SystemBrushes.WindowText, New PointF(0.0!, 4.0!))
         gr.Dispose()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         PictureBox1.Image = Nothing
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        '   Since DrawString method also utilizes similar string for output,
+        '   it was taken out of a handler sub and moved into a separate property for reusability.
+        TextBox1.Text = MultiplyingTableString
     End Sub
 
     Private Sub frm2DArray_Load(sender As Object, e As EventArgs) Handles MyBase.Load
