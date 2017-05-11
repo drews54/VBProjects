@@ -12,6 +12,16 @@
     Dim a%(MIN_B To MAX_B, MIN_B To MAX_B)
     Dim i%, j%
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim gr = PictureBox1.CreateGraphics()
+        Dim s As String = Space(6)
+        For j = MIN_B To MAX_B
+            s += Format(j + 2, "00") + Space(2)
+        Next
+        s += vbCrLf
+        gr.DrawString(s, SystemFonts.DefaultFont, SystemBrushes.WindowText, New PointF())
+    End Sub
+
     Private Sub frm2DArray_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         For i = MIN_B To MAX_B
             For j = MIN_B To MAX_B

@@ -33,7 +33,7 @@ Partial Class frm2DArray
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 174)
+        Me.Button1.Location = New System.Drawing.Point(21, 174)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 0
@@ -42,7 +42,7 @@ Partial Class frm2DArray
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(93, 174)
+        Me.Button2.Location = New System.Drawing.Point(102, 174)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 1
@@ -51,7 +51,7 @@ Partial Class frm2DArray
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(210, 174)
+        Me.Button3.Location = New System.Drawing.Point(201, 174)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 2
@@ -60,7 +60,7 @@ Partial Class frm2DArray
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(291, 174)
+        Me.Button4.Location = New System.Drawing.Point(282, 174)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 3
@@ -71,17 +71,17 @@ Partial Class frm2DArray
         '
         Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(156, 156)
+        Me.PictureBox1.Size = New System.Drawing.Size(174, 156)
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(210, 12)
+        Me.TextBox1.Location = New System.Drawing.Point(192, 12)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(156, 156)
+        Me.TextBox1.Size = New System.Drawing.Size(174, 156)
         Me.TextBox1.TabIndex = 5
         Me.TextBox1.TabStop = False
         '
