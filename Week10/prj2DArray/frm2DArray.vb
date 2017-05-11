@@ -31,6 +31,11 @@
         s += vbCrLf
 #End Region
         gr.DrawString(s, SystemFonts.DefaultFont, SystemBrushes.WindowText, New PointF())
+        gr.Dispose()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        PictureBox1.Image = Nothing
     End Sub
 
     Private Sub frm2DArray_Load(sender As Object, e As EventArgs) Handles MyBase.Load
