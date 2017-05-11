@@ -44,6 +44,10 @@
         TextBox1.Text = MultiplyingTableString(40)
     End Sub
 
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        TextBox1.Clear()
+    End Sub
+
     Private Sub frm2DArray_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         For i = MIN_B To MAX_B
             For j = MIN_B To MAX_B
