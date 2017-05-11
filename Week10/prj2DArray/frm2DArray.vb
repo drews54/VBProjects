@@ -15,10 +15,21 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim gr = PictureBox1.CreateGraphics()
         Dim s As String = Space(6)
+#Region "String forming"
         For j = MIN_B To MAX_B
             s += Format(j + 2, "00") + Space(2)
         Next
         s += vbCrLf
+
+        For i = MIN_B To MAX_B
+            s += Format(i + 2, "00") + Space(2)
+            For j = MIN_B To MAX_B
+                s += Format(a(i, j), "00") + Space(2)
+            Next j
+            s += vbCrLf
+        Next i
+        s += vbCrLf
+#End Region
         gr.DrawString(s, SystemFonts.DefaultFont, SystemBrushes.WindowText, New PointF())
     End Sub
 
