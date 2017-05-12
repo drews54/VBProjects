@@ -40,4 +40,11 @@
         TextBox4.Text = FormatNumber(gr2, 6)
         TextBox1.Select()
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        TextBox1.Clear()
+        TextBox2.Clear()
+        TextBox3.Clear()
+        TextBox4.Clear()
+    End Sub
 End Class
