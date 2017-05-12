@@ -9,5 +9,12 @@
             TextBox1.Select()
             Exit Sub
         End If
+
+        TextBox1.Text = CInt(TextBox1.Text)
+        n = TextBox1.Text
+        If n < 0 Then
+            n = 0
+            TextBox1.Text = n
+        End If
     End Sub
 End Class
