@@ -33,5 +33,21 @@
             TextBox1.Text += student(i) + Space(4) + CStr(mark(i)) + vbCrLf
         Next
         TextBox1.Text += vbCrLf
+
+        Dim sum!, aver!
+        For Each i In mark
+            sum += i
+        Next
+        aver = sum / mark.Length
+        TextBox1.Text += $"The average mark is {FormatNumber(aver, 1)}" + vbCrLf + vbCrLf
+
+        Dim max% = mark(LBound(mark))
+        For Each i In mark
+            If i > max Then max = i
+        Next
+        TextBox1.Text += $"The best students with a mark of {max} are:" + vbCrLf
+        For i = LBound(mark) To UBound(mark)
+            If mark(i) = max Then TextBox1.Text += student(i) + vbCrLf
+        Next
     End Sub
 End Class
