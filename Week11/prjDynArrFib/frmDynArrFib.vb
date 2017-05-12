@@ -34,5 +34,10 @@
 
         gr1 = If(n > 1, F(n) / F(n - 1), 1)
         gr2 = (1 + Math.Sqrt(5)) / 2
+
+        TextBox2.Text = If(n <= 40, F(n), Format(F(n), "scientific"))
+        TextBox3.Text = FormatNumber(gr1, 6)
+        TextBox4.Text = FormatNumber(gr2, 6)
+        TextBox1.Select()
     End Sub
 End Class
