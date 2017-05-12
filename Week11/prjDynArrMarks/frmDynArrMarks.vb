@@ -9,5 +9,13 @@
             ReDim Preserve student(n)
             student(n) = s
         Loop Until s = String.Empty
+
+        n -= 1
+        If n <= -1 Then
+            TextBox1.Text = "No students"
+            Exit Sub
+        End If
+        ReDim Preserve student(n)
+        ReDim Preserve mark(n)
     End Sub
 End Class
