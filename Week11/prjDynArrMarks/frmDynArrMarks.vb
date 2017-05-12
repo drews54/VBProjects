@@ -27,5 +27,11 @@
             End If
             mark(i) = CInt(s)
         Next
+
+        TextBox1.Clear()
+        For i = LBound(mark) To UBound(mark)
+            TextBox1.Text += student(i) + Space(4) + CStr(mark(i)) + vbCrLf
+        Next
+        TextBox1.Text += vbCrLf
     End Sub
 End Class
