@@ -18,5 +18,18 @@
         End If
 
         ReDim F(n)
+
+        For i = 0 To n
+            Select Case i
+                'Case 0
+                '    F(i) = 0
+                'Case 1
+                '    F(i) = 1
+                Case 0, 1
+                    F(i) = i
+                Case Else
+                    F(i) = F(i - 1) + F(i - 2)
+            End Select
+        Next
     End Sub
 End Class
