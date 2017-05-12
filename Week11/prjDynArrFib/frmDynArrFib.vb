@@ -16,5 +16,7 @@
             n = 0
             TextBox1.Text = n
         End If
+
+        ReDim F(n)
     End Sub
 End Class
