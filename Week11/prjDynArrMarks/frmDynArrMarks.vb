@@ -17,5 +17,15 @@
         End If
         ReDim Preserve student(n)
         ReDim Preserve mark(n)
+
+        Dim i%
+        For i = LBound(mark) To UBound(mark)
+            s = InputBox($"Input the mark for {student(i)}", "Students' Marks Input")
+            If Not IsNumeric(s) Or Len(s) > 4 Then
+                TextBox1.Text = "Not a mark"
+                Exit Sub
+            End If
+            mark(i) = CInt(s)
+        Next
     End Sub
 End Class
