@@ -31,5 +31,8 @@
                     F(i) = F(i - 1) + F(i - 2)
             End Select
         Next
+
+        gr1 = If(n > 1, F(n) / F(n - 1), 1)
+        gr2 = (1 + Math.Sqrt(5)) / 2
     End Sub
 End Class
