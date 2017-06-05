@@ -16,7 +16,7 @@
             Exit Sub
         End If
         ReDim Preserve student(n)
-        ReDim Preserve mark(n)
+        ReDim mark(n)
 
         Dim i%
         For i = LBound(mark) To UBound(mark)
